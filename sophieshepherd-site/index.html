@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sophie Shepherd — Product Design Leader</title>
+  <meta name="description" content="Hi, I’m Sophie. I'm a product design leader based in Austin, TX.">
+  <link rel="canonical" href="https://sophieshepherd.com/">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sophieshepherd.com/">
+  <meta property="og:title" content="Sophie Shepherd — Product Design Leader">
+  <meta property="og:description" content="Hi, I’m Sophie. I'm a product design leader based in Austin, TX.">
+  <meta property="og:image" content="https://sophieshepherd.com/profile.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --line: #e6e6e6;
+      --link: #1a1a1a;
+      --accent: #3b5bdb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #131313;
+        --fg: #e8e8e8;
+        --muted: #9a9a9a;
+        --line: #2a2a2a;
+        --link: #f0f0f0;
+        --accent: #8ea2ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    /* Header */
+    header { display: flex; align-items: center; gap: 20px; }
+    .avatar {
+      width: 150px; height: 150px; flex: none;
+      border-radius: 14px; object-fit: cover;
+      filter: grayscale(1);
+      background: var(--line);
+    }
+    h1 { font-size: 31px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; font-weight: 400; }
+    .location { color: var(--muted); margin: 0; display: flex; align-items: center; gap: 5px; }
+
+    /* Contact bar */
+    .contact {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      margin: 28px 0 8px; padding: 14px 0;
+      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    }
+    .contact .links { display: flex; gap: 18px; }
+    .contact a, .copy-email {
+      color: var(--link); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+      background: none; border: 0; padding: 0; font: inherit; cursor: pointer;
+    }
+    .contact a:hover, .copy-email:hover { color: var(--accent); }
+    .copy-email .copied { color: var(--accent); }
+    svg.i { width: 16px; height: 16px; flex: none; }
+
+    /* Sections */
+    section { margin: 40px 0px 80px; }
+    h2 { font-size: 21px; margin: 0 0 18px; font-weight: 500; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    section p:last-child { margin-bottom: 0; }
+    .inline, a.inline { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--line); }
+    .inline:hover, a.inline:hover { text-decoration-color: var(--accent); color: var(--accent); }
+
+    /* Experience / education entries */
+    .entry { display: grid; grid-template-columns: 120px 1fr; gap: 8px 24px; padding: 22px 0; }
+    .entry .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .entry .org { font-weight: 600; font-size: 17px; }
+    .entry .dates { color: var(--muted); font-size: 14px; white-space: nowrap; }
+    .entry .role { color: var(--fg); margin: 2px 0 10px; }
+    .entry ul { margin: 0; padding-left: 18px; color: var(--muted); }
+    .entry ul li { margin: 0 0 6px; }
+    .entry ul li:last-child { margin-bottom: 0; }
+    .entry .note { margin: 0; }
+    .entry--solo { display: block; }
+
+    @media (max-width: 560px) {
+      .wrap { padding: 40px 20px 72px; }
+      .entry { grid-template-columns: 1fr; gap: 4px; }
+      .entry .eyebrow { order: -1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <img class="avatar" src="profile.jpg" width="150" height="150" alt="Sophie Shepherd">
+      <div>
+        <h1>Sophie Shepherd</h1>
+        <p class="location">
+          <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Austin, TX
+        </p>
+      </div>
+    </header>
+
+    <div class="contact">
+      <button class="copy-email" type="button" id="copyEmail" data-email="sophshep@gmail.com" aria-label="Copy email address">
+        <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span class="label inline" >sophshep@gmail.com</span>
+      </button>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/sophshep/" class="inline" rel="me noopener" target="_blank">
+          <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95s-2.08 1.4-2.08 2.85V21H9z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sophshep" class="inline" rel="me noopener" target="_blank">
+          <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <section class="about">
+      <h2>About me</h2>
+      <p>👋&nbsp; Hi, I’m Sophie. I'm a product design leader with over 10 years of experience.</p>
+      <p>I most recently spent three years at <a class="inline" href="https://stripe.com/" target="_blank" rel="noopener">Stripe</a>, leading the “money-as-a-service” design org. At Stripe, I learned a lot about financial infrastructure, APIs, trust, and security. Most importantly, I learned that I love building teams made up of fun people who really, really care about the details.</p>
+      <p>Prior to this, I spent six years at <a class="inline" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>. At GitHub, I learned how to lead teams through big changes, and that I am motivated by building tools for fellow builders.</p>
+      <p>I pride myself in my ability to break big, complex problems down into manageable chunks, and that I always put people—both colleagues and users—first.</p>
+      <p>I am currently taking a sabbatical to <a class="inline" href="https://shepler.family/" target="_blank" rel="noopener">travel around the world</a> with my family. I will be looking for full time work again in Spring of 2026.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry entry--solo">
+        <div class="head"><span class="org">Stripe</span><span class="dates">Remote, 2022 – 2025</span></div>
+        <div class="role">Head of design, Money-as-a-service org</div>
+        <ul>
+          <li>Led a team of 12 designers working across many products and surfaces: Platform experience, Risk, Connect embedded components, Tax reporting, Storage, Payouts, Card issuing, Capital financing, and Crypto. These products were used by over 90% of Stripe users, and accounted for over 60% of Stripe's payment volume.</li>
+          <li>Accountable for all team output, from ensuring UI quality to defining and communicating a multi-year product vision</li>
+          <li>Dotted line leadership of supporting functions: user research and content design</li>
+          <li>Maintained a sustainable high-performance culture—this was not only the most impressive team I've ever built, but also the most fun</li>
+        </ul>
+      </div>
+
+      <div class="entry entry--solo">
+        <div class="head"><span class="org">GitHub</span><span class="dates">Remote, 2015 – 2022</span></div>
+        <div class="role">Staff Product Design Manager</div>
+        <ul>
+          <li>Led the designers responsible for core surfaces (Pull requests, Issues, Projects, account management), 0-1 products (Sponsors, Codespaces, Discussions), and GitHub's first iOS and Android apps.</li>
+          <li>Worked through acquisitions, including overseeing integration of MSFT designers into the GitHub team.</li>
+          <li>Contributed components (inc. design, code, and documentation) to our core design system, Primer</li>
+          <li>In addition to Product Design leadership, I oversaw the web designers responsible for github.com and docs.</li>
+        </ul>
+      </div>
+
+      <div class="entry entry--solo">
+        <div class="head"><span class="org">Ushahidi</span><span class="dates">Remote, 2014 – 2015</span></div>
+        <div class="role">Product Designer / Front-End Developer</div>
+        <ul>
+          <li>Led redesign of Ushahidi's core platform</li>
+          <li>Created and built Ushahidi's design system</li>
+        </ul>
+      </div>
+
+      <div class="entry entry--solo">
+        <div class="head"><span class="org">Happy Cog</span><span class="dates">Austin, TX, 2010 – 2014</span></div>
+        <div class="role">Designer</div>
+        <ul>
+          <li>Led redesigns of many websites across many industries and clients, such as: Harvard University, Ben &amp; Jerry's, MTV, Coldwell Banker, Lagunitas Brewing, and AMC Theatres</li>
+          <li>Led workshops with clients &amp; conducted user testing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry entry--solo">
+        <div class="head"><span class="org">New York University</span></div>
+        <div class="role">BFA, Film</div>
+        <p class="note">I thought I wanted to be a cinematographer but then I realized I was not passionate enough to make up for the long hours and networking required. But I still dream about returning to filmmaking some day, and I'd love to nerd out about recent movies with you!</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('copyEmail');
+      if (!btn) return;
+      var label = btn.querySelector('.label');
+      var original = label.textContent;
+      function flash() {
+        label.textContent = 'Copied!';
+        label.classList.add('copied');
+        setTimeout(function () {
+          label.textContent = original;
+          label.classList.remove('copied');
+        }, 1500);
+      }
+      function legacyCopy(text) {
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+          return ok;
+        } catch (e) { return false; }
+      }
+      btn.addEventListener('click', function () {
+        var email = btn.getAttribute('data-email');
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(flash).catch(function () {
+            if (legacyCopy(email)) flash(); else window.location.href = 'mailto:' + email;
+          });
+        } else if (legacyCopy(email)) {
+          flash();
+        } else {
+          window.location.href = 'mailto:' + email;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
